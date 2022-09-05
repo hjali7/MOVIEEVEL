@@ -211,5 +211,23 @@ body{
     font-size: small;
 }
 
-
 /* home */
+
+/* popular */
+
+.heading{
+    width: 100%;
+    background: #2d2e37;
+    border-radius: 5px;
+    margin: 2rem auto;
+}
+
+.heading-title{
+    padding: 8px 14px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+/* popular */
