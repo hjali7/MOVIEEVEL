@@ -117,17 +117,24 @@ body{
     row-gap: 2.1rem;
 }
 
-.navbar a  {
+.nav-link  {
     color:#b7b7b7;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.navbar a:hover ,
-.nav-active {
+.nav-link:hover , .nav-active {
     color: var(--text-color);
     transform: scale(1.1);
+}
+
+.nav-link .bx {
+    font-size: 1.6rem;
+}
+
+.nav-link-title{
+    font-size: .7rem;
 }
 
 /* nav */
