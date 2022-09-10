@@ -44,8 +44,8 @@ body{
     width: 100%;
 }
 
-.header{
-    position: sticky;
+header{
+    position: fixed;
     top: 0; left: 0;
     width: 100%;
     background: var(--body-color);
@@ -294,3 +294,46 @@ body{
 }
 
 /* movies */
+
+/* next page */
+
+.next-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.next-btn{
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: var(--main-color);
+    padding: .5em;
+    border-radius: 1em;
+    color: var(--text-color);
+}
+
+.next-btn:hover{
+    background-color: var(--hover-color);
+}
+
+/* next page */
+
+/* footer */
+
+.footer{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.3rem;
+}
+
+.footer p{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.footer p .bx-heart{
+    color: red;
+}
+
+/* footer */
