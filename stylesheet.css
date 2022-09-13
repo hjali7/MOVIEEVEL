@@ -363,10 +363,116 @@ header{
     position: absolute;
     justify-content: flex-end;
     bottom: 0;left: 0;
-    align-items: flex-start;
     flex-direction: column;
     background: linear-gradient(8deg , hsl(240 17% 14% / 74%) 14% , hsl(240 17% 14% / 14%) 44% );
+    padding: 40px;
+}
+
+.play-text h2{
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #000;
+    font-size: 1.5rem;
+}
+
+.play-text .rating {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    margin-top: 4px;
+}
+
+.play-text .tags {
+    display: flex;
+    flex-direction: column;
 
 }
 
+.play-text .tags span {
+    font-size: 1.1rem;
+    margin: .3rem;
+}
+
+.play-movie{
+    position: absolute;
+    bottom: 18rem;
+    right: 9rem;
+    padding: .7rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transition: all .5s ease;
+    font-size: 1.5rem;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 0 0 rgba(255 , 180 ,58 ,.7);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(255 , 193 ,7 ,0);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgba(255 , 193 ,7 ,0);
+    }
+    100%{
+        box-shadow: 0 0 0  rgba(255 , 193 ,7 ,0);
+    }
+}
+
 /* Play-container */
+
+/* movie - container */
+
+.video-container{
+    position: fixed;
+    top: 0;left: 0;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 400;
+    background-color: hsl(234 10% 20% /60%);
+}
+
+.video-container.show{
+    display: flex;
+}
+
+.video-box{
+    width: 82%;
+    position: relative;
+}
+
+.video-box #myvideo{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.close-video{
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    font-size: 30px;
+    color: var(--text-color)
+}
+/* movie - container */
+
+/* about movie  */
+
+.about-movie {
+    margin-top: 2rem;
+}
+
+.about-movie h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.about-movie p{
+    font-size: .938rem;
+    margin: 1rem  0;
+    max-width: 600px;
+}
+
+/* about movie  */

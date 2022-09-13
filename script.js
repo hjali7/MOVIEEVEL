@@ -36,3 +36,18 @@ var swiper = new Swiper(".popular-content", {
       },
     }
   });
+
+let PlayBtn = document.querySelector('.play-movie')
+let video = document.querySelector('.video-container') 
+let closeBtn = document.querySelector('.close-video')
+let myVideo = document.querySelector('#myvideo')
+
+PlayBtn.addEventListener('click' , function () {
+  video.classList.add('show')
+  myVideo.play()
+})
+
+closeBtn.addEventListener("click",function () {
+  video.classList.remove('show')
+  myVideo.pause()
+})
