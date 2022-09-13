@@ -475,4 +475,65 @@ header{
     max-width: 600px;
 }
 
+.cast-heading{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.cast{
+    display:grid;
+    grid-template-columns: repeat(auto-fit  , minmax(150px , 150px));
+    gap: 1rem;
+}
+
+.cast-img{
+    width: 150px;
+    height: 180px;
+    object-position: center;
+    object-fit: cover;
+}
+
 /* about movie  */
+
+/* download */
+
+.download{
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    max-width: 800px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.download-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin: 1rem 0;
+}
+
+.download-link{
+    display: flex;
+    justify-content: space-between  ;
+    margin-top: 2rem;
+}
+
+.download-link a{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.download-link a:hover{
+    transform: scale(.9);
+}
+
+/* download */
